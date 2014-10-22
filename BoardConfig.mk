@@ -61,7 +61,7 @@ BOARD_USES_ALSA_AUDIO := true
 BRCM_ALSA_LIB_DIR=device/samsung/bcm_common/alsa-lib
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/kyleve/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/kyleve/rootdir/fstab.hawaii_ss_kyleve
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 
 # Audio

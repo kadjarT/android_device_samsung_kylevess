@@ -25,6 +25,9 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 #Vendor Files
 $(call inherit-product-if-exists, vendor/samsung/kyleve/kyleve-vendor.mk)
 
+# Dalvik heap config
+include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
+
 # Use high-density artwork where available
 # Screen density
 PRODUCT_AAPT_CONFIG := hdpi
@@ -92,7 +95,6 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/config/gps.conf:system/etc/gps.conf \
 	device/samsung/kyleve/config/media_codecs.xml:system/etc/media_codecs.xml \
 	device/samsung/kyleve/config/media_profiles.xml:system/etc/media_profiles.xml \
-	device/samsung/kyleve/config/sec_touchscreen.idc:system/etc/sec_touchscreen.idc \
 	device/samsung/kyleve/config/srm.bin:system/etc/srm.bin \
 	device/samsung/kyleve/config/usb_portd.conf:system/etc/usb_portd.conf \
 	device/samsung/kyleve/config/vold.fstab:system/etc/vold.fstab \
@@ -118,7 +120,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.zygote.disable_gl_preload=true \
 	rild.libpath=/system/lib/libbrcm_ril.so \
 	wifi.interface=wlan0 \
-	mobiledata.interfaces=rmnet0,pdp0,wlan0,eth0,gprs,ppp0
+	mobiledata.interfaces=rmnet0,pdp0,wlan0,eth0,gprs,ppp0 \
+	ro.tvout.enable=false \
+	ro.error.receiver.default=com.samsung.receiver.error \
+	ro.hdcp2.rx=tz \
+	ro.secwvk=220 \
+	keyguard.no_require_sim=true \
+	ro.ril.hsxpa=1 \
+	ro.ril.gprsclass=10 \
+	ro.adb.qemud=1 \
+	ro.com.google.gmsversion=4.1_r6 \
+	net.bt.name=Android
 	
 PRODUCT_PACKAGES += \
 	libstagefrighthw \
@@ -157,9 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
         charger \
         charger_res_images
-        
-# Dalvik heap config
-include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
