@@ -14,7 +14,7 @@ device/samsung/kyleve/rootdir/init.bcm2166x.usb.rc:root/init.bcm2166x.usb.rc \
 device/samsung/kyleve/rootdir/init.bt.rc:root/init.bt.rc \
 device/samsung/kyleve/rootdir/init.log.rc:root/init.log.rc \
 device/samsung/kyleve/rootdir/init.recovery.kyleve.rc:root/init.recovery.kyleve.rc \
-device/samsung/kyleve/rootdir/rootdir/lpm.rc:root/lpm.rc \
+device/samsung/kyleve/rootdir/lpm.rc:root/lpm.rc \
 device/samsung/kyleve/rootdir/ueventd.hawaii_ss_kyleve.rc:root/ueventd.hawaii_ss_kyleve.rc \
 device/samsung/kyleve/rootdir/fstab.hawaii_ss_kyleve:root/fstab.hawaii_ss_kyleve \
 
