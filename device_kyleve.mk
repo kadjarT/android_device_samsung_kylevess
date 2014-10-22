@@ -44,38 +44,38 @@ PRODUCT_COPY_FILES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-device/samsung/kyleve/prop/etc/permissions/access.control.xml:system/etc/permissions/access.control.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.camera.flash.xml:system/etc/permissions/android.hardware.camera.flash.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-device/samsung/kyleve/prop/etc/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-device/samsung/kyleve/prop/etc/permissions/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
-device/samsung/kyleve/prop/etc/permissions/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-device/samsung/kyleve/prop/etc/permissions/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
-device/samsung/kyleve/prop/etc/permissions/com.android.location.provider.xml:system/etc/permissions/com.android.location.provider.xml \
-device/samsung/kyleve/prop/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
-device/samsung/kyleve/prop/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-device/samsung/kyleve/prop/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
-device/samsung/kyleve/prop/etc/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
-device/samsung/kyleve/prop/etc/permissions/com.sec.android.app.minimode.xml:system/etc/permissions/com.sec.android.app.minimode.xml \
-device/samsung/kyleve/prop/etc/permissions/com.sec.feature.minimode.xml:system/etc/permissions/com.sec.feature.minimode.xml \
-device/samsung/kyleve/prop/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-device/samsung/kyleve/prop/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
-device/samsung/kyleve/prop/etc/permissions/platform.xml:system/etc/permissions/platform.xml \
-device/samsung/kyleve/prop/etc/permissions/seccamera.xml:system/etc/permissions/seccamera.xml \
-device/samsung/kyleve/prop/etc/permissions/sec_edm.xml:system/etc/permissions/sec_edm.xml \
-device/samsung/kyleve/prop/etc/permissions/sec_feature.xml:system/etc/permissions/sec_feature.xml \
-device/samsung/kyleve/prop/etc/permissions/sec_hardware_library.xml:system/etc/permissions/sec_hardware_library.xml \
-device/samsung/kyleve/prop/etc/permissions/sec_mdm.xml:system/etc/permissions/sec_mdm.xml \
-device/samsung/kyleve/prop/etc/permissions/secmediarecorder.xml:system/etc/permissions/secmediarecorder.xml \
-device/samsung/kyleve/prop/etc/permissions/sec_platform_library.xml:system/etc/permissions/sec_platform_library.xml \
-device/samsung/kyleve/prop/etc/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
-packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+	device/samsung/kyleve/permissions/access.control.xml:system/etc/permissions/access.control.xml \
+	device/samsung/kyleve/permissions/android.hardware.camera.flash.xml:system/etc/permissions/android.hardware.camera.flash.xml \
+	device/samsung/kyleve/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+	device/samsung/kyleve/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+	device/samsung/kyleve/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+	device/samsung/kyleve/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+	device/samsung/kyleve/permissions/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+	device/samsung/kyleve/permissions/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+	device/samsung/kyleve/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+	device/samsung/kyleve/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+	device/samsung/kyleve/permissions/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
+	device/samsung/kyleve/permissions/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
+	device/samsung/kyleve/permissions/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
+	device/samsung/kyleve/permissions/com.android.location.provider.xml:system/etc/permissions/com.android.location.provider.xml \
+	device/samsung/kyleve/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
+	device/samsung/kyleve/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
+	device/samsung/kyleve/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+	device/samsung/kyleve/permissions/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
+	device/samsung/kyleve/permissions/com.sec.android.app.minimode.xml:system/etc/permissions/com.sec.android.app.minimode.xml \
+	device/samsung/kyleve/permissions/com.sec.feature.minimode.xml:system/etc/permissions/com.sec.feature.minimode.xml \
+	device/samsung/kyleve/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+	device/samsung/kyleve/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
+	device/samsung/kyleve/permissions/platform.xml:system/etc/permissions/platform.xml \
+	device/samsung/kyleve/permissions/seccamera.xml:system/etc/permissions/seccamera.xml \
+	device/samsung/kyleve/permissions/sec_edm.xml:system/etc/permissions/sec_edm.xml \
+	device/samsung/kyleve/permissions/sec_feature.xml:system/etc/permissions/sec_feature.xml \
+	device/samsung/kyleve/permissions/sec_hardware_library.xml:system/etc/permissions/sec_hardware_library.xml \
+	device/samsung/kyleve/permissions/sec_mdm.xml:system/etc/permissions/sec_mdm.xml \
+	device/samsung/kyleve/permissions/secmediarecorder.xml:system/etc/permissions/secmediarecorder.xml \
+	device/samsung/kyleve/permissions/sec_platform_library.xml:system/etc/permissions/sec_platform_library.xml \
+	device/samsung/kyleve/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
+	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
     
 	
 #BUILD.PROP
