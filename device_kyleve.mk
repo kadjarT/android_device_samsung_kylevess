@@ -76,7 +76,36 @@ PRODUCT_COPY_FILES += \
 	device/samsung/kyleve/permissions/sec_platform_library.xml:system/etc/permissions/sec_platform_library.xml \
 	device/samsung/kyleve/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
-    
+
+#CONFIG FILES
+PRODUCT_COPY_FILES += \
+	device/samsung/kyleve/config/alsa.conf:system/etc/alsa.conf \
+	device/samsung/kyleve/config/apns-conf.xml:system/etc/apns-conf.xml \
+	device/samsung/kyleve/config/asound.conf:system/etc/asound.conf \
+	device/samsung/kyleve/config/audio_effects.conf:system/etc/audio_effects.conf \
+	device/samsung/kyleve/config/audio_policy.conf:system/etc/audio_policy.conf \
+	device/samsung/kyleve/config/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
+	device/samsung/kyleve/config/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
+	device/samsung/kyleve/config/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
+	device/samsung/kyleve/config/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
+	device/samsung/kyleve/config/egl.cfg:system/etc/egl.cfg \
+	device/samsung/kyleve/config/gps.conf:system/etc/gps.conf \
+	device/samsung/kyleve/config/media_codecs.xml:system/etc/media_codecs.xml \
+	device/samsung/kyleve/config/media_profiles.xml:system/etc/media_profiles.xml \
+	device/samsung/kyleve/config/sec_touchscreen.idc:system/etc/sec_touchscreen.idc \
+	device/samsung/kyleve/config/srm.bin:system/etc/srm.bin \
+	device/samsung/kyleve/config/usb_portd.conf:system/etc/usb_portd.conf \
+	device/samsung/kyleve/config/vold.fstab:system/etc/vold.fstab \
+	device/samsung/kyleve/config/Volume.db:system/etc/Volume.db \
+	device/samsung/kyleve/config/gps/glconfig.xml:system/etc/gps/glconfig.xml \
+	device/samsung/kyleve/config/wifi/bcmdhd_apsta.bin:system/etc/bcmdhd_apsta.bin \
+	device/samsung/kyleve/config/wifi/bcmdhd_mfg.bin:system/etc/bcmdhd_mfg.bin \
+	device/samsung/kyleve/config/wifi/bcmdhd_p2p.bin:system/etc/bcmdhd_p2p.bin \
+	device/samsung/kyleve/config/wifi/bcmdhd_sta.bin:system/etc/bcmdhd_sta.bin \
+	device/samsung/kyleve/config/wifi/nvram_mfg.txt:system/etc/nvram_mfg.txt \
+	device/samsung/kyleve/config/wifi/nvram_net.txt:system/etc/nvram_net.txt \
+	device/samsung/kyleve/config/wifi/wpa_supplicant.conf:system/etc/wpa_supplicant.conf
+
 	
 #BUILD.PROP
 PRODUCT_PROPERTY_OVERRIDES += \
