@@ -32,9 +32,8 @@ LOCAL_KERNEL := device/samsung/kylevess/kernel/zImage
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     device/samsung/kylevess/kernel/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    device/samsung/kylevess/kernel/modules/blocklayoutdriver.ko:system/lib/modules/blocklayoutdriver.ko \
     device/samsung/kylevess/kernel/modules/dhd.ko:system/lib/modules/dhd.ko \
-    device/samsung/kylevess/kernel/modules/gspca_main.ko:system/lib/modules/gspca_main.ko \
-    device/samsung/kylevess/kernel/modules/lcd.ko:system/lib/modules/lcd.ko \
     device/samsung/kylevess/kernel/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 PRODUCT_COPY_FILES += \
