@@ -5,7 +5,6 @@
 rild.libpath=/system/lib/libbrcm_ril.so
 #rild.libargs=-d /dev/ttyS0
 
-#WVGA=240, HVGA=160
 ro.sf.lcd_density=240
 ro.lcd_brightness=160
 
@@ -51,3 +50,4 @@ gralloc.use_sync_mode=true
 persist.service.adb.enable=1                                                    
 persist.service.debuggable=1
 persist.sys.usb.config=adb
+
