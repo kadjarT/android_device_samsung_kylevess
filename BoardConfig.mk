@@ -68,7 +68,7 @@ TARGET_PROVIDES_POWER_HAL := true
 # Kernel
 #TARGET_KERNEL_SOURCE := kernel/samsung/kylevess
 #TARGET_KERNEL_CONFIG := cyanogenmod_kylevess_defconfig
-BOARD_KERNEL_CMDLINE :=
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 mem=456M androidboot.console=ttyS0 gpt v3d_mem=67108864 pmem=24M@0x9E800000
 BOARD_KERNEL_BASE := 0x82000000
 BOARD_KERNEL_PAGESIZE := 4096
 
@@ -154,13 +154,6 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/kylevess/ril/
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/kylevess/recovery/fstab.hawaii_ss_kylevess
-BOARD_HDPI_RECOVERY := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_10x18.h>"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/kylevess/recovery/recovery_keys.c
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-
 # Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 18
@@ -189,10 +182,20 @@ BOARD_SEPOLICY_UNION += \
     device.te \
     rild.te \ 
 
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/kylevess/recovery/fstab.hawaii_ss_kylevess
+BOARD_HDPI_RECOVERY := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_10x18.h>"
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/kylevess/recovery/recovery_keys.c
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
 # TWRP
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_DOWNLOAD_MODE := true
+TW_NO_REBOOT_BOOTLOADER := true
 BOARD_HAS_NO_REAL_SDCARD := true
+BOARD_HAS_NO_MISC_PARTITION := true
 TW_INTERNAL_STORAGE_PATH := "/sdcard"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_EXTERNAL_STORAGE_PATH := "/sdcard1"
