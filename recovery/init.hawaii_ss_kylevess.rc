@@ -262,7 +262,7 @@ chmod 0666 /sys/class/input/event1/device/light_poll_delay
     setprop ro.multisim.simslotcount 2
     
 on fs
-    mount_all /fstab.hawaii_ss_kyleve
+    mount_all /fstab.hawaii_ss_kylevess
     setprop ro.crypto.fuse_sdcard true
 
     # don't require sim
