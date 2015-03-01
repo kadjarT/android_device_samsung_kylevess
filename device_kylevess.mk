@@ -19,7 +19,7 @@ TARGET_SCREEN_WIDTH := 800
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/kylevess/recovery/init.hawaii_ss_kylevess.rc:root/init.hawaii_ss_kylevess.rc \
-	device/samsung/kylevess/recovery/init.bcm2165x.usb.rc:root/init.bcm2165x.usb.rc \
+	device/samsung/kylevess/recovery/init.bcm2166x.usb.rc:root/init.bcm2166x.usb.rc \
 	device/samsung/kylevess/recovery/init.log.rc:root/init.log.rc \
 	device/samsung/kylevess/recovery/init.bt.rc:root/init.bt.rc \
 	device/samsung/kylevess/recovery/ueventd.hawaii_ss_kylevess.rc:root/ueventd.hawaii_ss_kylevess.rc \
