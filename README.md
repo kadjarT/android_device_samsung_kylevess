@@ -22,4 +22,4 @@ Credits on alphabetical order;
 6. Xenon92
 ==============================================
 This devicetree is based on the GalaxyFame CM11 devicetree and to keep it more
-device organized I am starting with a clean side for the Kylevess related commits.
+device organized I am starting with a clean side for the Kylevess (Trend Lite) related commits.
